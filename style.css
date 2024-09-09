@@ -7,3 +7,17 @@ body {
 p {
     font-size: medium;
 }
+
+ul {
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
