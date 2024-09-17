@@ -5,7 +5,7 @@ async function getData() {
         console.log(data.data);
 
         
-        var dataProjection = document.getElementById("main");
+        var dataProjection = document.getElementById("explore");
         var dataList = dataProjection.querySelector("ul")
 
         dataList.innerHTML = '';
@@ -15,7 +15,7 @@ async function getData() {
             
 
             var piece = document.createElement("h3");
-            piece.innerText = data.data[i].title || "No Title Avaliable";
+            piece.innerHTML = data.data[i].title || "No Title Avaliable";
             dataList.appendChild(piece);
             
             var img = document.createElement("img")
@@ -24,7 +24,7 @@ async function getData() {
             dataList.appendChild(img);
 
             var desc = document.createElement("p");
-            desc.innerText = data.data[i].description || "No Description Available";
+            desc.innerHTML = data.data[i].description || "No Description Available";
             dataList.appendChild(desc);
         }
 
@@ -33,53 +33,3 @@ async function getData() {
     }
 }
 getData(); 
-
-//old test below
-/*
-async function getTitles() {
-try {
-    var response = await fetch("https://api.artic.edu/api/v1/artworks?fields=title");
-    var data = await response.json();
-    console.log(data.data);
-
-    
-    var dataProjection = document.getElementById("main");
-    //var dataList = dataProjection.querySelector("ul")
-    
-
-    for (i = 0; i < data.data.length; i++){            
-        var piece = document.createElement("h3");
-        piece.innerText = data.data[i].title;
-        dataProjection.appendChild(piece);
-
-    }
-
-} catch (error) {
-    console.log("Error", error);
-}
-}
-getTitles();
-
-async function getDesc() {
-    try {
-        var response = await fetch("https://api.artic.edu/api/v1/artworks?fields=description");
-        var data = await response.json();
-        console.log(data.data);
-    
-        
-        var dataProjection = document.getElementById("main");
-        //var dataList = dataProjection.querySelector("ul")
-        
-    
-        for (i = 0; i < data.data.length; i++){            
-            var piece = document.createElement("p");
-            piece.innerText = data.data[i].title;
-            dataProjection.appendChild(piece);
-    
-        }
-    
-    } catch (error) {
-        console.log("Error", error);
-    }
-    }
-    getDesc(); */

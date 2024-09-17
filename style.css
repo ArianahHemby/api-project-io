@@ -2,22 +2,55 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: #210706;
+    
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 150px;
+    padding-left: 100px;
+    background-color: #210706;
+}
+
+h1 {
+    color: bisque;
+    font-family: 'Trebuchet MS';
+}
+
+a {
+    color: #ffe4c4;
 }
 
 p {
+    text-align: center;
+    color: bisque;
     font-size: medium;
 }
 
+#main p {
+    width: 1000px;
+    color: #b1baaf; 
+    font-size: large; 
+    text-align: left; 
+}
+
 ul {
-        display: flex;
+    display: flex;
     align-items: center;
     flex-direction: column;
+    color: bisque;
 }
 
-p {
-    text-align: center;
-}
 
-h3 {
+button {
+    width: 200px;
+    height: 50px;
+    background-color: #C36F09;
+    color: #000000;
+    margin-top: 10px;
     text-align: center;
+    border: none;
 }
