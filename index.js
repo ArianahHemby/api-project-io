@@ -28,7 +28,7 @@ async function getData() {
         }
 
     } catch (error) {
-        console.log("Error", error); //catching errors
+        console.log("Error fetching artwork data:", error); //catching errors
     }
 }
 getData(); //call function
@@ -62,7 +62,7 @@ async function getArticles() {
         } 
 
     } catch (error) {
-        console.log("Error", error); //catching errors
+        console.log("Error fetching article data:", error); //catching errors
     }
 }
 getArticles(); //call function

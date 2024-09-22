@@ -52,5 +52,9 @@ button {
     color: #000000;
     margin-top: 10px;
     text-align: center;
-    border: none;
+    border-color: #C36F09;
+}
+
+#back-button {
+    margin-left: 35px;
 }
